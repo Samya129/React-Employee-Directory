@@ -7,6 +7,7 @@ import friends from './employees.json'
 
 
 
+
 function App() {
   //this is called from index.js
   return (
