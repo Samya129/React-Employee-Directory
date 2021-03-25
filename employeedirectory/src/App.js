@@ -21,13 +21,12 @@ function App() {
   return (
     <div>
       {console.log(employees)}
-      <Header />;
+      <Header />
+      <Title>Employee Directory</Title> 
       <Wrapper>
-      <Title>Employees List</Title> 
         <EmployeeCard employeeInfo= {employees} />
-      {/* getting Friends List is a part of props.children */}
       {/* {
-        friends.map(({id, name, image, occupation, location})=> {
+        employees.map(({id, name, image, occupation, location})=> {
           return <EmployeeCard key={id} name={name} image={image} occupation={occupation} location={location}/>
         })
       } */}

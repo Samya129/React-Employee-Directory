@@ -1,34 +1,37 @@
 import React from 'react'
 import "./style.css";
 
-function EmployeeCard(props){
-    // {name, image, occupation, location, phoneNumber, email}
+function EmployeeCard({employeeInfo}){
     return (
     <div className="card">
-        <div className="img-container">
-        {/* <img
-            // alt={name}
-            // src={image}
-        /> */}
-        </div>
         <div className="content">
+        <div className="img-container">
+        <img
+            alt= {employeeInfo[0]?.name?.first, employeeInfo[0]?.name?.last}
+            src={employeeInfo[0]?.picture?.medium}
+        />
+        </div>
         <ul>
+        {/* <li>
+            <strong>Profile Image:</strong> {employeeInfo[0]?.picture?.medium}
+            </li> */}
             <li>
-            <strong>Name:</strong> {props.employeeInfo[0]?.name?.first} 
+            <strong>Name:</strong> {employeeInfo[0]?.name?.first} {employeeInfo[0]?.name?.last}
             {/* This is the object of name and then within this subcategory is the first name from console */}
             </li>
+            {/* <li>
+            <strong>Last Name:</strong> {props.employeeInfo[0]?.name?.last}
+            </li> */}
             <li>
-            {/* <strong>Occupation:</strong> {occupation} */}
+            <strong>Email:</strong> {employeeInfo[0]?.email}
             </li>
             <li>
-            {/* <strong>Location:</strong> {location} */}
+            <strong>Phone Number:</strong> {employeeInfo[0]?.phone}
             </li>
             <li>
-            {/* <strong>Phone Number:</strong> {phoneNumber} */}
+            <strong>Location:</strong> {employeeInfo[0]?.location?.city}, {employeeInfo[0]?.location?.state}
             </li>
-            <li>
-            {/* <strong>Email:</strong> {email} */}
-            </li>
+
         </ul>
         </div>
     </div>
