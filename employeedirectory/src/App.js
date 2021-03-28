@@ -1,36 +1,35 @@
-import React, {useEffect, useState} from "react"; // 2 properties into React library
+import React from 'react'
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import EmployeeCard from './components/EmployeeCard'
+import Api from "./utils/Api"
+ //import EmployeeCard from "./components/EmployeeCard/index"
+//import AllEmployeesList from "./components/AllEmployeesList"
+
 // import friends from './employees.json'
-import axios from 'axios';
 
 
 
 function App() {
-  const [employees, setEmployees] = useState([]) //run employees and then set the employees
-
-  useEffect( () => {
-    axios.get("https://randomuser.me/api/?results=50").then((results)=>{
-      setEmployees(results.data.results)
-    })
-  }, []) //holding new information into this array
-
   //this is called from index.js
   return (
     <div>
-      {console.log(employees)}
       <Header />
       <Title>Employee Directory</Title> 
       <Wrapper>
-        <EmployeeCard employeeInfo= {employees} />
-      {/* {
-        employees.map(({id, name, image, occupation, location})=> {
-          return <EmployeeCard key={id} name={name} image={image} occupation={occupation} location={location}/>
-        })
-      } */}
+      <Api />
+          {/* <EmployeeCard
+            fullName={employeeInfo.name.first }
+            email= {employeeInfo.email}
+            phoneNumber= {employeeInfo.phone}
+            location={employeeInfo.location.city + employeeInfo.location.state}
+            
+          /> */}
+          {/* <AllEmployeesList/> */}
+          {/* <EmployeeCard /> */}
+        
     </Wrapper>
+    
     </div>
     
   );
