@@ -47,44 +47,6 @@ function EmployeeCard({ employeeInfo }) {
             </tr>
           );
         })}
-        <tr>
-          <td className="img-container">
-            {/* <img
-              alt={
-                employeeInfo[0]?.name?.first + "," + employeeInfo[0]?.name?.last
-              }
-              src={employeeInfo[0]?.picture?.medium}
-            /> */}
-          </td>
-          <td>{employeeInfo[0]?.name?.first}</td>
-          <td>{employeeInfo[0]?.name?.last}</td>
-          <td>{employeeInfo[0]?.email}</td>
-          <td>{employeeInfo[0]?.phone}</td>
-          <td>
-            {employeeInfo[0]?.location?.city},{" "}
-            {employeeInfo[0]?.location?.state}
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td className="img-container">
-            <img
-              alt={
-                employeeInfo[0]?.name?.first + "," + employeeInfo[0]?.name?.last
-              }
-              src={employeeInfo[0]?.picture?.medium}
-            />
-          </td>
-          <td>{employeeInfo[0]?.name?.first}</td>
-          <td>{employeeInfo[0]?.name?.last}</td>
-          <td>{employeeInfo[0]?.email}</td>
-          <td>{employeeInfo[0]?.phone}</td>
-          <td>
-            {employeeInfo[0]?.location?.city}
-            {","}
-            {employeeInfo[0]?.location?.state}
-          </td>
-        </tr>
       </tbody>
     </table>
   );
