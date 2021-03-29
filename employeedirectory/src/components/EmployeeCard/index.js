@@ -2,12 +2,6 @@ import React from "react";
 import "./style.css";
 
 function EmployeeCard({ employeeInfo }) {
-  // const working = dataSet.length > 0
-  // console.log({working})
-
-  // const info = {
-  //     console.log(working && dataSet)
-  // }
   console.log(employeeInfo);
 
   return (
@@ -26,24 +20,23 @@ function EmployeeCard({ employeeInfo }) {
         {employeeInfo.map((employee, index) => {
           return (
             <tr>
-              <td scope="column">{index + 1}</td>
+              <td scope="row">{index + 1}</td>
               <td className="img-container">
                 <img
-                  alt={
-                    employee?.name?.first +
-                    "," +
-                    employee?.name?.last
-                  }
+                  alt={employee?.name?.first + "," + employee?.name?.last}
                   src={employee?.picture?.medium}
                 />
               </td>
-              <td>{employee?.name?.first} {employee?.name?.last}</td>
-          <td>{employee?.email}</td>
-          <td>{employee?.phone}</td>
-          <td>
-            {employee?.location?.city},{" "}
-            {employee?.location?.state}
-          </td>
+              <td>
+                {employee?.name?.first} {employee?.name?.last}
+              </td>
+              <td>
+                <a href={employee?.email}> {employee?.email}</a>
+              </td>
+              <td>{employee?.phone}</td>
+              <td>
+                {employee?.location?.city}, {employee?.location?.state}
+              </td>
             </tr>
           );
         })}
