@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function EmployeeCard({ employeeInfo }) {
+function EmployeeCard({ employeeInfo, searchInput }) {
   //Ascending and descending order pseudo code
   //console.log(employeeInfo[0].name.first);
   //let arrayOfNames = [{employeeInfo[0].name.first + " ," + employee?.name?.last}];
@@ -25,7 +25,9 @@ function EmployeeCard({ employeeInfo }) {
         </tr>
       </thead>
       <tbody className="eachCard">
-        {employeeInfo.map((employee) => {
+        {employeeInfo.filter((singleEmployee) => {
+          return singleEmployee.name.last.startsWith(searchInput);
+        }).map((employee) => {
           return (
             <tr>
               <td scope="row"></td>
