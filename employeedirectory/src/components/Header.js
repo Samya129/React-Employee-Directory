@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Header.css"; 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
-import SearchBar from "./SearchBar";
+// import "./style.css"; for within header folder
+import SearchForm from "./SearchForm";
 import Title from "./Title";
 
 function Header() {
@@ -10,7 +11,7 @@ function Header() {
     <header className="header">
       {/* add the className from the css style sheet */}
       <Title>Employee Directory</Title> 
-      <SearchBar />
+      <SearchForm />
     </header>
     </div>
   );

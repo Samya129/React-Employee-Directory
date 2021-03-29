@@ -3,16 +3,17 @@ import React, { useEffect, useState } from "react"; // 2 properties into React l
 import EmployeeCard from "../components/EmployeeCard";
 
 function Api() {
+  const url = "https://randomuser.me/api/?results=50"
   const [employees, setEmployees] = useState([]); //run employees and then set the employees
 
   useEffect(() => {
-    axios.get("https://randomuser.me/api/?results=50").then((results) => {
+    axios.get(url).then((results) => {
       setEmployees(results.data.results);
     });
   }, []);
   return (
     <div className="container">
-      {console.log(employees)}
+      {/* {console.log(employees)} */}
       <EmployeeCard employeeInfo={employees} />
     </div>
   );

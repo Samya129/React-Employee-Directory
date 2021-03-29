@@ -2,28 +2,36 @@ import React from "react";
 import "./style.css";
 
 function EmployeeCard({ employeeInfo }) {
-  console.log(employeeInfo);
+  //Ascending and descending order pseudo code
+  //console.log(employeeInfo[0].name.first);
+  //let arrayOfNames = [{employeeInfo[0].name.first + " ," + employee?.name?.last}];
+  //console.log(arrayOfNames)
+  // arrayOfNames.sort(function(a, b){
+  //   return a - b
+  // });
+  // console.log(arrayOfNames)
 
   return (
     <table className="table table-hover">
       <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col"></th>
+        <tr className="tableHeadings">
+          {/* <th scope="col"></th> */}
+          <th ></th>
           <th scope="col">Name</th>
+          <th></th>
           <th scope="col">Email</th>
-          <th scope="col">Phone Number</th>
-          <th scope="col">Location</th>
+          <th scope="col">Phone</th>
+          <th scope="col">City, State</th>
         </tr>
       </thead>
-      <tbody>
-        {employeeInfo.map((employee, index) => {
+      <tbody className="eachCard">
+        {employeeInfo.map((employee) => {
           return (
             <tr>
-              <td scope="row">{index + 1}</td>
+              <td scope="row"></td>
               <td className="img-container">
                 <img
-                  alt={employee?.name?.first + "," + employee?.name?.last}
+                  alt={employee?.name?.first + " ," + employee?.name?.last}
                   src={employee?.picture?.medium}
                 />
               </td>
@@ -44,5 +52,6 @@ function EmployeeCard({ employeeInfo }) {
     </table>
   );
 }
-
 export default EmployeeCard;
+
+
