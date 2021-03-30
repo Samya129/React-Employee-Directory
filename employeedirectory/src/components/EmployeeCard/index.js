@@ -10,6 +10,7 @@ function EmployeeCard({ employeeInfo, searchInput }) {
   //   return a - b
   // });
   // console.log(arrayOfNames)
+  console.log(searchInput)
 
   return (
     <table className="table table-hover">
@@ -25,12 +26,13 @@ function EmployeeCard({ employeeInfo, searchInput }) {
         </tr>
       </thead>
       <tbody className="eachCard">
-        {employeeInfo.filter((singleEmployee) => {
-          return singleEmployee.name.last.startsWith(searchInput);
+        {employeeInfo.filter((singleUser) => {
+          return singleUser.name.first.startsWith(searchInput);
+          //if (singleUser.name.first === searchinput){ return ""}
         }).map((employee) => {
           return (
             <tr>
-              <td scope="row"></td>
+              <td></td>
               <td className="img-container">
                 <img
                   alt={employee?.name?.first + " ," + employee?.name?.last}
