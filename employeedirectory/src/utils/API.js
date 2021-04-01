@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"; // 2 properties into React l
 import DatatablePage from "../components/tableData";
 
 function Api() {
-  const url = "https://randomuser.me/api/?results=50"
+  const url = "https://randomuser.me/api/?results=400"
   const [employees, setEmployees] = useState([]); //run employees and then set the employees
 
   useEffect(() => { //life cycle method
