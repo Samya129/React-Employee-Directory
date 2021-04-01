@@ -24,11 +24,9 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 ## Installation 
 
-``
 * Bootstrap
 * Axios
 * MDB React
-``
 
 ## Usage
 
