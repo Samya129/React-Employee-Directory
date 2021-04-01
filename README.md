@@ -1,19 +1,65 @@
-# Unit 19 React Homework: Employee Directory
+# React-Employee-Directory [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Overview
+## Description
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+As a full-stack developer, we want to be able to create an application directory for employees using React, its library, and a random user api in order to build an interactive user interface. A given user can search for the employee(s) by typing it into the search bar which should populate the results if any. This React UI also can be seen populating the first name, last name, and location in ascending or descending order by clicking on the column header names to perhaps simplify your search for that employee. With the show entries feature, a user is also able to populate as little or as many employees to the page as they would like.   
 
 ## User Story
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+```
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+```
 
-## Business Context
+## Table of Contents
+* [Description](#description)
+* [User Story](#userstory)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Criteria](#criteria)
+* [Application](#application)
+* [Questions](#questions)
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+## Installation 
 
-## Acceptance Criteria
+``
+* Bootstrap
+* Axios
+* MDB React
+``
 
+## Usage
+
+* React
+* Javascript
+* gitHub Pages
+* Random User Api
+* HTML
+* MDB React
+
+## License
+
+* This project is licensed under an MIT license.
+
+## Contributing 
+
+N/A
+
+## Tests
+
+To run test, run the following commands:
+
+```
+* npm i then
+* npm start 
+* Note: Go to localhost:3000 within your browser
+```
+
+## Criteria
+
+```
 Given a table of random users generated from the [Random User API](https://randomuser.me/), when the user loads the page, a table of employees should render. 
 
 The user should be able to:
@@ -21,35 +67,13 @@ The user should be able to:
   * Sort the table by at least one category
 
   * Filter the users by at least one property.
+```
 
-## Commit Early and Often
+## Application
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+* [Deployed Application](https://samya129.github.io/React-Employee-Directory/)
+*  image source here
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Questions
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-* Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
-
-* **Important**: Be sure to push your codebase to GitHub and **NOT** your built and deployed code. Ensure this happens by following the above instructions and using the `gh-pages` branch to host the deployed application's code.
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
+* If you have any questions regarding this repository, contact me either by email at Samyaf020@gmail.com, or you can find more of my work within my github account attached here [Github](https://github.com/Samya129). Here, you can also open an issue if needed.
