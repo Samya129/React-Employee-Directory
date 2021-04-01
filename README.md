@@ -70,7 +70,7 @@ The user should be able to:
 ## Application
 
 * [Deployed Application](https://samya129.github.io/React-Employee-Directory/)
-* [Demo Video]()
+* [Demo Video](https://drive.google.com/file/d/1bMsy0UJXAj8B6xYjJRehWXoRzngoSZco/view)
 * ![Visuals](employeedirectory/images/React-Employee-Directory.png)
 
 ## Questions
