@@ -2,7 +2,22 @@ import React from "react";
 import { MDBDataTable } from "mdbreact";
 
 const DatatablePage = ({ employeeInfo }) => {
-  
+  const information = employeeInfo.map((employee) => {
+    return {
+      profileImage: (
+        <img
+          alt={employee.name.first + " ," + employee.name.last}
+          src={employee.picture.medium}
+        />
+      ),
+      firstName: employee.name.first,
+      lastName: employee.name.last,
+      email: employee.email,
+      phone: employee.phone,
+      location: employee.location.city + ", " + employee.location.state,
+    };
+  });
+  const results = information.length > 0;
   const data = {
     columns: [
       {
@@ -42,7 +57,7 @@ const DatatablePage = ({ employeeInfo }) => {
         width: 100,
       },
     ],
-  
+    rows: results && information,
   };
 
   return (
