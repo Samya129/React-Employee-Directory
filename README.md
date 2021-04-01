@@ -71,7 +71,7 @@ The user should be able to:
 
 * [Deployed Application](https://samya129.github.io/React-Employee-Directory/)
 * [Demo Video](https://drive.google.com/file/d/1bMsy0UJXAj8B6xYjJRehWXoRzngoSZco/view)
-* ![Visuals](employeedirectory/images/React-Employee-Directory.png)
+![Visuals](employeedirectory/images/React-Employee-Directory.png)
 
 ## Questions
 
