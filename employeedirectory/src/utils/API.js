@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react"; // 2 properties into React library
-import EmployeeCard from "../components/EmployeeCard";
+import DatatablePage from "../components/tableData";
 
-function Api({employeeInput}) {
+function Api() {
   const url = "https://randomuser.me/api/?results=50"
   const [employees, setEmployees] = useState([]); //run employees and then set the employees
 
@@ -14,7 +14,7 @@ function Api({employeeInput}) {
   return (
     <div className="container">
       {/* {console.log(employees)} */}
-      <EmployeeCard employeeInfo={employees} searchInput={employeeInput} />
+      <DatatablePage employeeInfo={employees}/>
     </div>
   );
 }
